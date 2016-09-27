@@ -10,12 +10,20 @@ namespace Generic.Interface
     {
         public void AddData(T a, T b)
         {
-            throw new NotImplementedException();
+            Console.WriteLine("a="+a +" B="+b); 
         }
 
         public T DeleteData(T a, T b)
         {
             throw new NotImplementedException();
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        public void DeleteData()
+        {
+            Console.WriteLine();
         }
     }
 }

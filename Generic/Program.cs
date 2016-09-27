@@ -8,7 +8,7 @@ namespace Generic
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main23(string[] args)
         {
 
            print();// print name for exp

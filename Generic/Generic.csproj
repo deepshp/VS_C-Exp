@@ -46,6 +46,7 @@
     <Compile Include="Basic\GenericClass.cs" />
     <Compile Include="Interface\ClassForInterface.cs" />
     <Compile Include="Interface\IGenericInterface.cs" />
+    <Compile Include="Interface\MainInterface.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Where\GenenricWhere.cs" />
