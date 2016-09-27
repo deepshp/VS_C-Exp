@@ -24,6 +24,46 @@ namespace Generic.Where
 
     }
 
+    class Where
+    {
+        struct abc
+            {
+            string name;
+            int age;
+
+        }
+
+        public static void Main()
+        {
+            StringExp();
+            Console.ReadKey();
+        }
+        public static void StringExp()
+        {
+            //Error :-- must be non ref --- non nullable
+            //ValueTypeData<string> valObj = new ValueTypeData<string>();
+
+            
+            ValueTypeData<abc> valStruc = new ValueTypeData<abc>();
+        }
+        public static void StrucExp()
+        {
+            //Error :-- must be non ref --- non nullable
+            //ValueTypeData<string> valObj = new ValueTypeData<string>();
+
+            ValueTypeData<abc> valStruc = new ValueTypeData<abc>();
+        }
+
+        public static void IntBit()
+        {
+            //Error :-- must be non ref --- non nullable
+            //ValueTypeData<string> valObj = new ValueTypeData<string>();
+
+            ValueTypeData<abc> valStruc = new ValueTypeData<abc>();
+        }
+
+    }
+
 
 
 }

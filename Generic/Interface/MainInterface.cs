@@ -8,7 +8,7 @@ namespace Generic.Interface
 {
     class MainInterface
     {
-        public static void Main()
+        public static void MainG()
         {
             IGenericInterface<int> clasFronObj = new ClassForInterface<int>();
 
