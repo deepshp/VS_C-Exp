@@ -48,6 +48,7 @@
     <Compile Include="Interface\IGenericInterface.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Where\GenenricWhere.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -57,7 +58,6 @@
     <Folder Include="Generic\" />
     <Folder Include="MethodsAndDeligate\" />
     <Folder Include="NestedGeneric\" />
-    <Folder Include="Where\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
