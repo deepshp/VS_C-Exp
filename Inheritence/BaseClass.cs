@@ -4,10 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LINQ_andLambda
+namespace Inheritence
 {
-    class Program
+    class BaseClass
     {
-       
+
+        public int baseAdd(int a,int b)
+        {
+            return a+b;
+        }
     }
 }

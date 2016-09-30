@@ -24,16 +24,15 @@ namespace Generic.Where
 
     }
 
-    class Where
+    class ValueTypeExpClass 
     {
         struct abc
-            {
+         {
             string name;
             int age;
+         }
 
-        }
-
-        public static void Main()
+        public static void MainVal()
         {
             StringExp();
             Console.ReadKey();
@@ -48,7 +47,7 @@ namespace Generic.Where
         }
         public static void StrucExp()
         {
-            //Error :-- must be non ref --- non nullable
+            
             //ValueTypeData<string> valObj = new ValueTypeData<string>();
 
             ValueTypeData<abc> valStruc = new ValueTypeData<abc>();
@@ -56,14 +55,45 @@ namespace Generic.Where
 
         public static void IntBit()
         {
-            //Error :-- must be non ref --- non nullable
-            //ValueTypeData<string> valObj = new ValueTypeData<string>();
+           //
 
-            ValueTypeData<abc> valStruc = new ValueTypeData<abc>();
+            ValueTypeData<int> valStruc = new ValueTypeData<int>();
+            ValueTypeData<bool> valbool = new ValueTypeData<bool>();
+            ValueTypeData<Boolean> valboolean = new ValueTypeData<Boolean>();
         }
 
     }
 
+    class RefTypeExpClass
+    {
+        public static void MainVal()
+        {
+             intExp1();
+            Console.ReadKey();
+        }
+        public static void intExp()
+        {
+            // type must be refrence Type
+             //ReferenceType<Int32> refObj = new ReferenceType<Int32>();
+
+           // ReferenceType<Object> refObj = new ReferenceType<object>();
 
 
-}
+            
+        }
+
+        public static void intExp1()
+        {
+            // type must be refrence Type
+            //ReferenceType<Int32> refObj = new ReferenceType<Int32>();
+
+             ReferenceType<Object> refObj = new ReferenceType<object>();
+
+
+
+        }
+    }
+
+
+
+    }
