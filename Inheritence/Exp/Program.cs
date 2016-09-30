@@ -8,7 +8,7 @@ namespace SimpleExamples
 {
     class Program
     {
-        static void MainInherit(string[] args)
+        static void MainInherit(string[] args) 
         {
             Console.WriteLine("Inheritence");
 

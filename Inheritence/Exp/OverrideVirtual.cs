@@ -6,6 +6,19 @@ using System.Threading.Tasks;
 
 namespace SimpleExamples
 {
+    class Polymorphism
+    {
+        public static void Main()
+        {
+            Console.WriteLine("Virtual Override");
+            A a1 = new A();
+            a1.show();
+            B b1 = new B();
+            b1.show();
+            A a2 = new B();
+            a2.show();
+        }
+    }
     class A
     {
         public virtual void show()
@@ -24,17 +37,5 @@ namespace SimpleExamples
         }
     }
 
-    class Polymorphism
-    {
-        public static void Main()
-        {
-            Console.WriteLine("Virtual Override");
-            A a1 = new A();
-            a1.show();
-            B b1 = new B();
-            b1.show();
-            A a2 = new B();
-            a2.show();
-        }
-    }
+    
 }
