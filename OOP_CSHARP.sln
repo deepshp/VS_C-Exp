@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQ andLambda", "LINQ andL
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeligateExp", "DeligateExp\DeligateExp.csproj", "{7AB7BECD-7B32-4F2D-915E-1DF46B8EEB31}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractClassAndInterface", "AbstractClassAndInterface\AbstractClassAndInterface.csproj", "{ABB5E8A5-2708-4B11-99ED-9A2AC509C0BE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{7AB7BECD-7B32-4F2D-915E-1DF46B8EEB31}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7AB7BECD-7B32-4F2D-915E-1DF46B8EEB31}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7AB7BECD-7B32-4F2D-915E-1DF46B8EEB31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABB5E8A5-2708-4B11-99ED-9A2AC509C0BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABB5E8A5-2708-4B11-99ED-9A2AC509C0BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABB5E8A5-2708-4B11-99ED-9A2AC509C0BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABB5E8A5-2708-4B11-99ED-9A2AC509C0BE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
