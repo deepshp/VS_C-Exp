@@ -11,11 +11,45 @@ namespace Inheritence
 
         static void Main(string[] args)
         {
+            //VirtualOverideExp();
+            New_WithoutOR_WithNewKeyWord();
             
-            Console.WriteLine("Inheritence Experiment");
-            ChildClass ccObj = new ChildClass();
-            Console.WriteLine( ccObj.baseAdd(2,3));
             Console.ReadKey();
+        }
+        static void New_WithoutOR_WithNewKeyWord()
+        {
+            // we same name method in child class and Base class
+
+            // I bege to situation ,System skal call till child class funktion
+            Console.WriteLine("Inheritence Experiment----NEW");
+
+
+            ChildClass ccObj = new ChildClass();
+            // call  to function of childClass 
+            ChildClass childObj = new ChildClass();
+            BaseClass baseObj = new ChildClass();
+            // call  to function of childClass 
+
+            childObj.newExp();
+            baseObj.newExp();
+        }
+        static void VirtualOverideExp()
+        {
+            // we same name method in child class and Base class
+
+
+            Console.WriteLine("Inheritence Experiment---Virtual --Override");
+
+            ChildClass childObj = new ChildClass();
+            BaseClass baseObj = new ChildClass();
+            // call  to function of childClass 
+           
+            childObj.baseOverride();
+            baseObj.baseOverride();
+
+
+            
+
         }
     }
 }

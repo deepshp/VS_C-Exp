@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace SimpleExamples
 {
-    class ChildClass : BaseClass 
+    class ChildClassOth : BaseClass 
     {
-        public ChildClass():base()
+        public ChildClassOth():base()
         {
             Console.WriteLine("Child class Constructor");
 

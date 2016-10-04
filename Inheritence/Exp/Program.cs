@@ -12,7 +12,7 @@ namespace SimpleExamples
         {
             Console.WriteLine("Inheritence");
 
-            ChildClass ccObj = new ChildClass();
+            ChildClassOth ccObj = new ChildClassOth();
             NewVarExp();
             //call to base class
             //ccObj.BaseMul(3,4);
@@ -31,8 +31,8 @@ namespace SimpleExamples
 
         static void NewVarExp()
         {
-            ChildClass ccObj = new ChildClass();
-            BaseClass bbObj = new  ChildClass();
+            ChildClassOth ccObj = new ChildClassOth();
+            BaseClass bbObj = new  ChildClassOth();
 
         }
     }

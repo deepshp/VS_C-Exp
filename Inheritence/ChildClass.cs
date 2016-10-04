@@ -6,11 +6,31 @@ using System.Threading.Tasks;
 
 namespace Inheritence
 {
-    class ChildClass : BaseClass 
+    public class ChildClass : BaseClass 
     {
-        public int baseAdd(int a, int b)
+        public new int baseAdd(int a, int b)
         {
             return a*b;
+        }
+
+        //Experiment for Override
+        /* if base class methods will mark with override ,virtual and abstarct
+         * 
+         * then system will create error
+         *   Can override on inherhit method
+        */
+        public override void baseOverride()
+        {
+            Console.WriteLine("Child Overide");
+            //base.baseOverride();
+        }
+        public  void baseOverride2()
+        {
+            Console.WriteLine("Child  new Overide");
+        }
+        public void newExp()
+        {
+            Console.WriteLine("Child new");
         }
     }
 }

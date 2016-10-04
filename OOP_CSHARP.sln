@@ -13,13 +13,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQ andLambda", "LINQ andL
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeligateExp", "DeligateExp\DeligateExp.csproj", "{7AB7BECD-7B32-4F2D-915E-1DF46B8EEB31}"
 EndProject
-
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C571C55B-4F64-4459-80AD-B2A35F2E71E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C571C55B-4F64-4459-80AD-B2A35F2E71E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C571C55B-4F64-4459-80AD-B2A35F2E71E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C571C55B-4F64-4459-80AD-B2A35F2E71E7}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1B133BB5-F3E4-44B4-B2D3-4AEDB085708C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1B133BB5-F3E4-44B4-B2D3-4AEDB085708C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1B133BB5-F3E4-44B4-B2D3-4AEDB085708C}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -36,10 +39,6 @@ Global
 		{7AB7BECD-7B32-4F2D-915E-1DF46B8EEB31}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7AB7BECD-7B32-4F2D-915E-1DF46B8EEB31}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7AB7BECD-7B32-4F2D-915E-1DF46B8EEB31}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C571C55B-4F64-4459-80AD-B2A35F2E71E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C571C55B-4F64-4459-80AD-B2A35F2E71E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C571C55B-4F64-4459-80AD-B2A35F2E71E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C571C55B-4F64-4459-80AD-B2A35F2E71E7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

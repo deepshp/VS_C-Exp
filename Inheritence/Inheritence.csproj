@@ -49,7 +49,7 @@
     <Compile Include="BaseClass.cs" />
     <Compile Include="ChildClass.cs" />
     <Compile Include="Exp\BaseClass.cs" />
-    <Compile Include="Exp\ChildClass.cs" />
+    <Compile Include="Exp\ChildClassInn.cs" />
     <Compile Include="Exp\OverrideVirtual.cs" />
     <Compile Include="Exp\Program.cs" />
     <Compile Include="Program.cs" />
