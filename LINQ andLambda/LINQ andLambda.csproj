@@ -43,6 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DependentClass\JoinTables.cs" />
+    <Compile Include="DependentClass\OtherClass.cs" />
+    <Compile Include="LambdaExp.cs" />
+    <Compile Include="LINQ _QueryOperators.cs" />
+    <Compile Include="LinqOverview.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
