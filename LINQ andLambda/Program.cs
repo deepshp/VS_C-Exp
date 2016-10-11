@@ -32,7 +32,7 @@ namespace LINQ_andLambda
            
 
             
-            int value = 6;
+            int value = 8;
             switch (value)
             {
                 case 1:
@@ -73,10 +73,16 @@ namespace LINQ_andLambda
 
                     
                     break;
+                case 8:
+                    // XML  Experiments
+                    XmlBasicsFunLinQ xmlObj = new XmlBasicsFunLinQ();
+                    XmlBasicsFunLinQ.ReadXMLFileUsingLINQ();
 
+
+                    break;
                 default:
                     {
-                        System.Console.WriteLine("Other number");
+                        System.Console.WriteLine("Not in Range");
                         break;
                     }
             }
