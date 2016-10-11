@@ -45,19 +45,19 @@
   <ItemGroup>
     <Compile Include="DependentClass\JoinTables.cs" />
     <Compile Include="DependentClass\OtherClass.cs" />
-    <Compile Include="LambdaExp.cs" />
-    <Compile Include="LINQ _QueryOperators.cs" />
-    <Compile Include="LinqOverview.cs" />
+    <Compile Include="LINQ\LambdaExp.cs" />
+    <Compile Include="LINQ\LINQ _QueryOperators.cs" />
+    <Compile Include="LINQ\LinqOverview.cs" />
+    <Compile Include="LINQ\XmlBasicsOnlyFunLinQ.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="XmlBasicsFunLinQ.cs" />
+    <Compile Include="XML\XmlBasicsLinQ.cs" />
+    <Compile Include="XML\XML_TypeExp.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="XML\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

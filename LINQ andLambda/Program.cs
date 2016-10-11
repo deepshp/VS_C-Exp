@@ -79,7 +79,16 @@ namespace LINQ_andLambda
                     //XmlBasicsFunLinQ.ReadXMLFileUsingLINQ();
                     //XmlBasicsFunLinQ.AddNewNode();
                     //XmlBasicsFunLinQ.AddNewNodeFirst();
-                    XmlBasicsFunLinQ.DeletingParticularNode();
+                    //XmlBasicsFunLinQ.DeletingParticularNode();
+                    XML.XML_TypeExp.ReadExternalFiles();
+
+
+                    break;
+
+                case 9:
+                    // XML  --
+                   
+                    XML.XML_TypeExp.ReadExternalFiles();
 
 
                     break;
