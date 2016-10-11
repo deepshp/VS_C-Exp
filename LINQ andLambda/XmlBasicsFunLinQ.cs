@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
+using System.Xml;
 
 
 namespace LINQ_andLambda
@@ -52,6 +53,7 @@ namespace LINQ_andLambda
                 her vi skal  tilføje en ny node i eksistede xml
              */
 
+            Console.WriteLine("-------Add Element--------");
             XDocument xDoc = new XDocument();
 
             xDoc = XDocument.Parse(GetXml());// få en xml String
@@ -60,12 +62,108 @@ namespace LINQ_andLambda
 
             xDoc.Element("Departments").Add(new XElement("NewDep","valueNewDe"));
 
-            var elements = xDoc.Element("Department").Descendants();
+            var elements = xDoc.Element("Departments").Descendants();
+
+            foreach (XElement elemnt in elements)
+                Console.WriteLine(elemnt);
+
+            
+
+
+        }
+        public static void AddNewNodeFirst()
+        {
+            /*
+                her vi skal  tilføje en ny node i eksistede xml
+             */
+            Console.WriteLine("Add Element at First");
+            XDocument xDoc = new XDocument();
+
+            xDoc = XDocument.Parse(GetXml());// få en xml String
+                                             // Elenments er Enumaration ,arbejder med Descendants
+
+
+            xDoc.Element("Departments").AddFirst(new XElement("NewDep", "valueNewDe"));
+
+            var elements = xDoc.Element("Departments").Descendants();
 
             foreach (XElement elemnt in elements)
                 Console.WriteLine(elemnt);
 
 
+
+
         }
+
+        public static void DeletingParticularNode()
+        {
+            Console.WriteLine(" Xml  --DeletingParticularNode()  ");
+            XDocument xDoc = new XDocument();
+
+
+            xDoc = XDocument.Parse(GetXml());
+
+            Console.WriteLine(" Xml BEFORE Remove ");
+             
+            PrintXml(xDoc.Element("Departments").Descendants());
+
+            xDoc.Descendants().Where(s => s.Value == "Sales").Remove();
+
+            Console.WriteLine(" Xml AFTER Remove ");
+
+            PrintXml(xDoc.Element("Departments").Descendants());
+
+            
+
+        }
+
+        public static void PrintXml(IEnumerable<XElement> elements)
+        {
+           
+            foreach (XElement element in elements)
+                Console.WriteLine(element);
+
+
+        }
+        public static void PrintXmlValue(IEnumerable<XElement> elements)
+        {
+
+            foreach (XElement element in elements)
+                Console.WriteLine(element.Value);
+
+
+        }
+
+        public static void ReadExternalFiles()
+        {
+            XmlReader xmlReader = XmlReader.Create("http://www.ecb.int/stats/eurofxref/eurofxref-daily.xml");
+
+            while(xmlReader.Read())
+            {
+
+                if(xmlReader.NodeType==XmlNodeType.Element && xmlReader.Name=="cube")
+                {
+
+
+                    if (xmlReader.HasAttributes)
+                    {
+                        Console.WriteLine(xmlReader.GetAttribute("currency")+" "+xmlReader.GetAttribute("rate"));
+                    }
+
+                }
+
+            }
+
+
+        }
+        public static void WriteXmlFileFromScrach()
+        {
+
+
+
+        }
+
+
+
     }
 }

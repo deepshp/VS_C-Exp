@@ -76,7 +76,10 @@ namespace LINQ_andLambda
                 case 8:
                     // XML  Experiments
                     XmlBasicsFunLinQ xmlObj = new XmlBasicsFunLinQ();
-                    XmlBasicsFunLinQ.ReadXMLFileUsingLINQ();
+                    //XmlBasicsFunLinQ.ReadXMLFileUsingLINQ();
+                    //XmlBasicsFunLinQ.AddNewNode();
+                    //XmlBasicsFunLinQ.AddNewNodeFirst();
+                    XmlBasicsFunLinQ.DeletingParticularNode();
 
 
                     break;
